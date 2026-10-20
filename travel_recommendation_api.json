@@ -1,0 +1,20 @@
+{
+  "beaches": [
+    { "id": 1, "name": "Bora Bora beaches", "type": "Beach", "location": "French Polynesia", "imageUrl": "assets/bora.jpg", "alt": "Palm trees beside the turquoise lagoon in Bora Bora", "description": "Turquoise lagoons, palm-fringed shores and a slower island rhythm. Discover the beaches of this South Pacific island.", "sourceUrl": "https://www.tahititourisme.com/islands/bora-bora/" },
+    { "id": 2, "name": "Copacabana Beach", "type": "Beach", "location": "Rio de Janeiro, Brazil", "imageUrl": "assets/copacabana.jpg", "alt": "Copacabana Beach and the coastal city of Rio de Janeiro", "description": "A sweeping urban shoreline with ocean views and Rio’s unmistakable energy. A beach escape with the city right beside you.", "sourceUrl": "https://www.visitbrasil.com/en/location/rio-de-janeiro-en/" }
+  ],
+  "temples": [
+    { "id": 1, "name": "Angkor Wat", "type": "Temple", "location": "Siem Reap, Cambodia", "imageUrl": "assets/angkor.jpg", "alt": "The carved stone towers of Angkor Wat beneath a blue sky", "description": "Discover the monumental towers and intricate stonework of Angkor, a remarkable expression of Khmer architecture and heritage.", "sourceUrl": "https://whc.unesco.org/en/list/668/" },
+    { "id": 2, "name": "Kiyomizu-dera", "type": "Temple", "location": "Kyoto, Japan", "imageUrl": "assets/kyoto.jpg", "alt": "The pagoda of Kiyomizu-dera in Kyoto at sunset", "description": "A hillside temple overlooking Kyoto, celebrated for its wooden stage, traditional architecture and beautiful mountain setting.", "sourceUrl": "https://www.japan.travel/en/spot/2199/" }
+  ],
+  "countries": [
+    { "id": 1, "name": "Japan", "region": "East Asia", "imageUrl": "assets/tokyo.jpg", "alt": "Neon-lit shopping streets in Tokyo", "description": "From Tokyo’s bright city streets to Kyoto’s temples, Japan invites you to explore modern city life and enduring traditions.", "sourceUrl": "https://www.japan.travel/en/", "cities": [
+      { "id": 1, "name": "Tokyo", "imageUrl": "assets/tokyo.jpg", "alt": "Neon-lit shopping streets in Tokyo", "description": "Explore a city of lively neighborhoods, distinctive architecture and endless urban discoveries.", "sourceUrl": "https://www.gotokyo.org/en/" },
+      { "id": 2, "name": "Kyoto", "imageUrl": "assets/kyoto.jpg", "alt": "Kiyomizu-dera pagoda overlooking Kyoto at sunset", "description": "Discover temple grounds, traditional streets and the cultural landscapes of Japan’s ancient capital.", "sourceUrl": "https://www.japan.travel/en/destinations/kansai/kyoto/" }
+    ] },
+    { "id": 2, "name": "Australia", "region": "Oceania", "imageUrl": "assets/sydney.jpg", "alt": "Sydney Opera House and the harbor waterfront", "description": "Start with Sydney’s harbor and continue to Melbourne’s creative neighborhoods. Discover two different sides of Australia’s city life.", "sourceUrl": "https://www.australia.com/en", "cities": [
+      { "id": 1, "name": "Sydney", "imageUrl": "assets/sydney.jpg", "alt": "Sydney Opera House beside the harbor", "description": "A harbor city where iconic architecture meets a waterside way of life.", "sourceUrl": "https://www.sydney.com/" },
+      { "id": 2, "name": "Melbourne", "imageUrl": "assets/melbourne.jpg", "alt": "Flinders Street Station and a tram in Melbourne", "description": "Discover creative laneways, riverside walks and a city with a distinctive cultural character.", "sourceUrl": "https://www.visitmelbourne.com/" }
+    ] }
+  ]
+}

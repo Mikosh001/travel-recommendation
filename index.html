@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find your next escape with TravelBloom. Explore beautiful beaches, remarkable temples and inspiring countries.">
+  <title>TravelBloom | Find your next escape</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="travel_recommendation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="TravelBloom home"><span class="brand-icon" aria-hidden="true">✳</span> TravelBloom<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <form class="search-form" id="search-form" role="search">
+      <label class="sr-only" for="search-input">Search destinations</label>
+      <input id="search-input" name="q" type="search" placeholder="Beach, temple, country…" autocomplete="off" maxlength="100">
+      <button class="button button-dark" type="submit">Search</button>
+      <button class="clear-button" id="clear-button" type="button">Clear</button>
+    </form>
+  </header>
+
+  <main id="main" class="home-main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-top"><span class="tiny-label"><span class="status-dot"></span> A WORLD WORTH EXPLORING</span><span class="edition">THE DISCOVERY EDIT</span></div>
+      <div class="discovery-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">LESS SCROLLING. MORE WANDERING.</p>
+          <h1 id="hero-title">Somewhere<br>new.<br><em>Something you.</em></h1>
+          <p class="hero-description">From saltwater mornings to centuries of stories. Discover beaches, temples and countries that make you want to go.</p>
+          <a class="button button-cream" href="#discover">Find your next escape <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span aria-hidden="true">◉</span><span>Follow your curiosity.<br><strong>We’ll help you find a place.</strong></span></div>
+        </div>
+
+        <section class="discovery-panel" id="discover" aria-labelledby="discovery-title">
+          <div id="discovery-welcome">
+            <p class="eyebrow muted">YOUR NEXT CHAPTER STARTS HERE</p>
+            <h2 id="discovery-title">What calls to you?</h2>
+            <p class="panel-intro">Pick a feeling, or search for a destination above.</p>
+            <div class="category-list">
+              <button class="category-choice" type="button" data-query="beach"><span class="category-number">01</span><span><strong>A little vitamin sea</strong><small>Beaches & blue horizons</small></span><span class="category-arrow" aria-hidden="true">↗</span></button>
+              <button class="category-choice" type="button" data-query="temple"><span class="category-number">02</span><span><strong>Stories set in stone</strong><small>Temples & timeless places</small></span><span class="category-arrow" aria-hidden="true">↗</span></button>
+              <button class="category-choice" type="button" data-query="country"><span class="category-number">03</span><span><strong>A whole new perspective</strong><small>Countries & city discoveries</small></span><span class="category-arrow" aria-hidden="true">↗</span></button>
+            </div>
+            <div class="panel-footnote"><span aria-hidden="true">✳</span> Small searches. Beautiful possibilities.</div>
+          </div>
+          <div id="search-results" hidden>
+            <div class="results-heading"><div><p class="eyebrow muted" id="results-eyebrow">CURATED FOR YOUR CURIOSITY</p><h2 id="results-title">Your next escape</h2></div><span class="result-count" id="result-count"></span></div>
+            <p class="results-summary" id="results-summary" role="status" aria-live="polite"></p>
+            <div class="results-grid" id="results-grid"></div>
+          </div>
+          <p class="load-error" id="load-error" role="alert" hidden>We couldn’t load the destinations. Please refresh the page and try again.</p>
+        </section>
+      </div>
+      <div class="hero-bottom"><span>TRAVEL WITH AN OPEN MIND.</span><span>Beaches <b>·</b> Temples <b>·</b> Countries</span><span>MAKE ROOM FOR WONDER ↗</span></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 TravelBloom · Student travel discovery project</span><a href="credits.html">Photo & destination credits ↗</a></footer>
+</body>
+</html>
