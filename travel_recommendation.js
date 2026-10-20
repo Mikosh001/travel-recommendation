@@ -6,6 +6,7 @@ const resultsSection = document.getElementById("search-results");
 const welcome = document.getElementById("discovery-welcome");
 const resultsGrid = document.getElementById("results-grid");
 let destinationData;
+let searchRevision = 0;
 
 // One shared request; it works on GitHub Pages, including project subpaths.
 const dataReady = fetch("./travel_recommendation_api.json")
@@ -70,10 +71,11 @@ function makeCard(place) {
 }
 
 async function runSearch(rawQuery) {
+  const revision = ++searchRevision;
   const queryAtStart = normalizeQuery(rawQuery);
   if (!(await dataReady)) return;
   // A Clear click or a newer search cancels this pending result.
-  if (normalizeQuery(searchInput.value) !== queryAtStart) return;
+  if (revision !== searchRevision || normalizeQuery(searchInput.value) !== queryAtStart) return;
   const result = findRecommendations(rawQuery, destinationData);
   welcome.hidden = true;
   resultsSection.hidden = false;
@@ -90,6 +92,7 @@ async function runSearch(rawQuery) {
 
 searchForm.addEventListener("submit", (event) => { event.preventDefault(); runSearch(searchInput.value); });
 document.getElementById("clear-button").addEventListener("click", () => {
+  searchRevision++;
   searchInput.value = "";
   resultsGrid.replaceChildren();
   resultsSection.hidden = true;
